@@ -34,7 +34,8 @@ class ViewController: UIViewController {
 
         let cancelAction = UIAlertAction(title: "再挑戦", style: .cancel) { _ in
             self.targetNumLabel.text = String(Int.random(in: 1...100))
-            self.selectNumSlider.value = 50        }
+            self.selectNumSlider.value = 50
+        }
 
         alert.addAction(cancelAction)
         present(alert, animated: true)
